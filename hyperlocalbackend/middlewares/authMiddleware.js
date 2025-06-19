@@ -14,6 +14,8 @@ export const authenticate = async (req, res, next) => {
       req.profile = await User.findById(decoded.id).select("-password");
     } else if (decoded.role === "provider") {
       req.profile = await Provider.findById(decoded.id).select("-password");
+    }else if (decoded.role === "admin") {
+      req.profile = await User.findById(decoded.id).select("-password");
     }
 
     next();

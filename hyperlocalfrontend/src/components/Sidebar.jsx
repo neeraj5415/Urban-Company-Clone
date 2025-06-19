@@ -15,7 +15,7 @@ export default function Sidebar({ role }) {
       { to: "/admin/services", label: "Services" },
     ],
     user: [
-    { to: "/Dashboard", label: "Dashboard" },
+    { to: "/user/UserProfile", label: "Profile" },
     { to: "/pages/bookings", label: "My Bookings" },
     { to: "/search", label: "Browse Services" },
     ],

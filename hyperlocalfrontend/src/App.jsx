@@ -13,6 +13,7 @@ import ProviderBookings from './pages/ProviderBookings'
 import BookingForm from './pages/BookingForm'
 import ServiceSearch from './pages/ServiceSearch'
 import RatingsReviews from './pages/RatingsReviews'
+import UserProfile from './pages/user/UserProfile'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,6 +28,7 @@ function App() {
         <Route path="/Provider/Provider Dashboard" element={<ProviderDashboard />} />
         <Route path="/admin/Admindashboard" element={<AdminDashboard />} />
         <Route path="/Dashboard" element={<UserDashboard />} />
+        <Route path="/user/UserProfile" element={<UserProfile />}/>
         <Route path="/pages/bookings" element={<BookingHistory />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/provider/Bookings" element={<ProviderBookings />} />

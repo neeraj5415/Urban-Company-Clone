@@ -13,6 +13,7 @@ import adminRoutes from "./routes/adminRoutes.js";
 //import providerRoutes from "./routes/providerRoutes.js";
 // Import Middleware
 import { errorHandler } from "./middlewares/errorMiddleware.js";
+import userRoutes from "./routes/userRoutes.js";
 
 // Load environment variables
 dotenv.config();
@@ -35,6 +36,7 @@ app.use("/api/reviews", reviewRoutes);
 app.use("/api/payments", paymentRoutes);
 app.use("/api/admin", adminRoutes);
 //app.use("/api/provider", providerRoutes);
+app.use("/api/user", userRoutes);
 
 // Root route
 app.get("/", (req, res) => {
