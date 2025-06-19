@@ -1,13 +1,5 @@
 # Urban Company Clone Backend
 
-## Features
-- JWT-based authentication for three roles: user, provider, admin
-- Passwords hashed with bcrypt
-- Signup with email/password or email/OTP (OTP sent via email)
-- Login with email/password
-- Role-based middleware for protected routes
-- MongoDB with Mongoose
-- Environment variables for secrets and configuration
 
 ## Setup
 1. Install dependencies:
