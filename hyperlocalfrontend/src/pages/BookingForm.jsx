@@ -20,7 +20,7 @@ export default function BookingForm() {
   };
 
   return (
-    <div className="max-w-xl mx-auto p-6 bg-white rounded shadow mt-10">
+    <div className="max-w-xl mx-auto p-6 bg-red-400 rounded shadow mt-10">
       <h2 className="text-2xl font-bold mb-6">Book a Service</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <input
@@ -61,7 +61,7 @@ export default function BookingForm() {
         ></textarea>
         <button
           type="submit"
-          className="w-full bg-blue-600 text-white p-3 rounded hover:bg-blue-700"
+          className="w-full bg-red-300 text-white p-3 rounded hover:bg-red-800"
         >
           Submit Booking
         </button>

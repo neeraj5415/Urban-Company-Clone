@@ -24,8 +24,8 @@ export default function RatingsReviews() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto p-6 mt-10 bg-white shadow rounded">
-      <h2 className="text-2xl font-bold mb-4">Ratings & Reviews</h2>
+    <div className="max-w-3xl mx-auto p-6 mt-10 bg-red-400 shadow rounded">
+      <h2 className="text-2xl font-bold mb-4 text-red-800">Ratings & Reviews</h2>
 
       <form onSubmit={handleSubmit} className="space-y-4 mb-6">
         <div className="flex items-center space-x-2">
@@ -56,7 +56,7 @@ export default function RatingsReviews() {
 
         <button
           type="submit"
-          className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700"
+          className="bg-red-300 text-white px-6 py-2 rounded hover:bg-red-800"
         >
           Submit Review
         </button>
@@ -66,13 +66,13 @@ export default function RatingsReviews() {
         {reviews.map((review) => (
           <div
             key={review.id}
-            className="border p-4 rounded bg-gray-50 shadow-sm"
+            className="border p-4 rounded bg-red-100 shadow-sm"
           >
             <p className="font-semibold">{review.user}</p>
             <p className="text-yellow-500">
               {"⭐".repeat(review.rating)} ({review.rating})
             </p>
-            <p className="text-sm text-gray-700">{review.comment}</p>
+            <p className="text-sm text-red-800">{review.comment}</p>
           </div>
         ))}
       </div>
